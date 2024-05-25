@@ -23,7 +23,7 @@ RUN hello_world_application/_build/hello_world
 
 * В дирректории .github/workflows создаём новый файл:
 
-```bash
+```yml
 name: Docker Image CI
 
 on:
