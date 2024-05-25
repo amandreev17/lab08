@@ -21,7 +21,7 @@ jobs:
         docker build -t logger .
         docker images
         mkdir logs
-        docker run -it -v "$(pwd)/logs/:/home/logs/" logger
+        docker run -v "$(pwd)/logs/:/home/logs/" logger
         text1
         text2
         text3
