@@ -8,6 +8,3 @@ WORKDIR ./
 
 RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
 RUN cmake --build _build
-
-WORKDIR ./
-ENTRYPOINT ["./_build/hello_world"]
