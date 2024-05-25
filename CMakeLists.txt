@@ -3,4 +3,5 @@ project(solver)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(hello_world_application)
+include_directories(solver_application)
+
