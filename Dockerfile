@@ -6,4 +6,4 @@ RUN apt install -yy gcc g++ cmake
 COPY . .
 
 RUN cd hello_world_application && cmake -B_build && cmake --build _build
-RUN cd hello_world_application && ls
+RUN hello_world_application/_build/hello_world
