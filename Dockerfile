@@ -8,4 +8,4 @@ WORKDIR hello_world_application
 
 RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
 RUN cmake --build _build
-RUN _build/hello_world
+RUN cd _build && ls
