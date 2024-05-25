@@ -6,8 +6,8 @@ RUN apt install -yy gcc g++ cmake
 COPY . /solver ./
 WORKDIR ./
 
-RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
-RUN cmake --build _build
+RUN groupadd -r sample && useradd -r -g sample sample
+USER sample
 
 WORKDIR ./
-ENTRYPOINT ./_build/hello_world
+ENTRYPOINT ["./build/hello_world"]
