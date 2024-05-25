@@ -18,5 +18,6 @@ jobs:
       run: sudo apt install runc containerd docker.io
     - name: Build the Docker image
       run: |
-        docker build ./ -t hello_world_application
-        docker run hello_world_application
+        docker build -t logger .
+        docker images
+        docker inspect logger
