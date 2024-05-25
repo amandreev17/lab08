@@ -21,3 +21,4 @@ jobs:
         docker build -t logger .
         docker images
         docker inspect logger
+        cat hello_world_application/hello_world.cpp
