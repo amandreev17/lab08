@@ -9,3 +9,5 @@ WORKDIR hello_world_application
 RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
 RUN cmake --build _build
 
+WORKDIR hello_world_application
+ENTRYPOINT ["hello_world_application/_build/hello_world"]
