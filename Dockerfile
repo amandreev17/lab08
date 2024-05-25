@@ -8,4 +8,4 @@ COPY . .
 RUN cd hello_world_application
 RUN cmake -B_build
 RUN cmake --build _build
-RUN ls
+RUN cd hello_world_application && ls
