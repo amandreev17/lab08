@@ -17,4 +17,6 @@ jobs:
     - name: Install Docker
       run: sudo apt install runc containerd docker.io
     - name: Build the Docker image
-      run: sudo docker build -t logger .
+      run: |
+        docker build ./ -t hello_world_application
+        docker run hello_world_application
